@@ -2,6 +2,7 @@
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Nav/Navbar';
 import Head from 'next/head';
+import Calculator from '../components/Calculator/Calculator';
 
 function Home() {
   return (
@@ -26,16 +27,15 @@ function Home() {
         <div className='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
           <div className='mr-auto place-self-center lg:col-span-6'>
             <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white'>
-              CKD Prevention 
+            Your Early CKD Prevention Tool
             </h1>
             <p className='max-w-2xl mb-6 font text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
               Know early, stop the symptoms from starting.
             </p>
             <a
-              // onClick={() => plausible('PreOrderClick', { props: { location: 'hero' } })}
               href='#signup'
               className='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-borange-600 hover:bg-borange-800 focus:ring-4 focus:ring-borange-300 dark:focus:ring-borange-900'>
-              I am a patient
+              I’m a patient 
               <svg
                 className='w-5 h-5 ml-2 -mr-1'
                 fill='currentColor'
@@ -48,9 +48,9 @@ function Home() {
               </svg>
             </a>
             <a
-              href='#feature-section'
+              href='/doctor'
               className='inline-flex items-center justify-center px-5 py-3 my-1 text-base font-medium text-center text-gray-900 border border-gray-500 rounded-lg hover:bg-sgreen-40 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>
-              I am a doctor
+              I’m a doctor
             </a>
           </div>
           <div className='m-3 lg:col-span-5 lg:flex round motion-safe:animate-fadeIn'>
@@ -62,11 +62,7 @@ function Home() {
           </div>
         </div>
       </header>
-      {/* <TestimonialSection />
-      <FeatureSection></FeatureSection>
-      <GallerySection></GallerySection>
-      <FAQSection></FAQSection>
-      <EmailSection></EmailSection> */}
+      <Calculator></Calculator>
       <Footer></Footer>
     </>
   );
