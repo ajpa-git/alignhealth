@@ -138,11 +138,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+            <Link legacyBehavior href='/#signup'>
               <a
-                href='/#signup'
+                
                 className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'>
                 Patient
               </a>
+              </Link>
             </li>
             <li>
               <Link legacyBehavior href='/doctor'>
@@ -187,12 +189,15 @@ export default function Navbar() {
                       About
                     </a>
                   </Link>
+                  <Link legacyBehavior href='/#signup'>
+
                   <a
-                    href='/#signup'
                     onClick={() => setDropdownMenuToggle(!dropdownMenuToggle)}
                     className='px-6 py-3'>
                     Patient
                   </a>
+                  </Link>
+
                   <Link  legacyBehavior href='/doctor'>
                     <a className='px-6 py-3' onClick={() => setDropdownMenuToggle(!dropdownMenuToggle)}>
                     Doctor

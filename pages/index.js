@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Nav/Navbar';
 import Head from 'next/head';
 import Calculator from '../components/Calculator/Calculator';
+import Link from 'next/link';
 
 function Home() {
   return (
@@ -47,11 +48,13 @@ function Home() {
                   clipRule='evenodd'></path>
               </svg>
             </a>
+            <Link legacyBehavior href='/doctor'>
             <a
-              href='/doctor'
+              
               className='inline-flex items-center justify-center px-5 py-3 my-1 text-base font-medium text-center text-gray-900 border border-gray-500 rounded-lg hover:bg-sgreen-40 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>
               I’m a doctor
             </a>
+            </Link>
           </div>
           <div className='m-3 lg:col-span-5 lg:flex round motion-safe:animate-fadeIn'>
             <img

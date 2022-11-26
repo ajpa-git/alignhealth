@@ -48,7 +48,7 @@ function Doctor() {
               Doctor portal
             </h1>
             <p className='max-w-2xl font text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
-              Find out the risk factor of your patients. It's never too soon!
+              Find out the risk factor of your patients. It&apos;s never too soon!
             </p>
           </div>
         </div>
