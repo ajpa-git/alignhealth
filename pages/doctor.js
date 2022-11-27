@@ -64,9 +64,9 @@ function Doctor() {
           <div className='mt-8 grid grid-cols-1 gap-8 lg:gap-16'>
             <div className='lg:py-8'>
               <div className='space-y-4'>
-                <p>Please upload the patient’s test result.</p>
+                <p>Please upload the patient’s test result in DASTA4 format to get a risk factor.</p>
                 <p>
-                  Part of the EHH2022.
+                  Part of the EHH2022. More at <a href="https://hackhealth.eu/">hackhealth.eu/</a>
                 </p>
               </div>
             </div>
